@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Releaf | Breathe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static',filename='styles/base.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    function pageRedirect(t){
+      var delay = t; // time in milliseconds
+
+      setTimeout(function(){
+        window.location = "./";
+      },delay);
+
+    }
+  </script>
+</head>
+<body onload="">
+  <div class="return-previous">
+    <img src="https://cdn-icons-png.flaticon.com/512/271/271218.png" />
+    <a href="./">
+      <h2>I'm feeling better now</h2>
+    </a>
+  </div>
+    <div class="base">
+        <h1 class = "blinking-text-1">Breathe in.</h1>
+    </div>
+    <div class="spinner-wrapper">
+        <div class="spinner">
+         <div class="sk-folding-cube">
+          <div class="sk-cube1 sk-cube"></div>
+          <div class="sk-cube2 sk-cube"></div>
+          <div class="sk-cube4 sk-cube"></div>
+          <div class="sk-cube3 sk-cube"></div>
+         </div>
+        </div>
+       </div>
+       <h1 class = "blinking-text-2">Breathe out.</h1>
+</body>
+</html>

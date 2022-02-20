@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/app.css') }}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>ReLeaf</title>
+</head>
+<body style="background-color:#F2F2F2;">
+  <div class="container">
+    <div class="row main-top">
+      <div id="main-exercise" class="col-xs-12 col-sm-12 col-md-12 main-containers main-exercise">
+        <a href="./exercises">
+          <span class="hyperspan main-containers"></span>
+        </a>
+        <h4>Meditation Exercises</h4>
+        <h2>You have a</h2><h1 id="day-streak">0</h1><h2>day meditation streak</h2>
+      </div>
+    </div>
+    <div class="row main-bottom">
+      <div class="col-xs-4 col-sm-4 offset-0">
+        <div id="main-goals" class="main-bottom-container main-containers">
+          <h3 class="main-titles">Today's Goals:</h3>
+          <label class="checkbox">50 reps of pushups
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox">Read one chapter of Dune
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox">Cook a four course meal for myself
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <h1 class="add-goal">Add another goal</h1>
+          <img class="goal-btn" src="https://cdn.iconscout.com/icon/free/png-256/loop-1485682-1258903.png" />
+          <img class="goal-btn" src="https://www.iconpacks.net/icons/1/free-trash-icon-347-thumb.png" />
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 offset-0">
+        <div id="main-articles" class="main-bottom-container main-containers">
+          <h3 class="main-titles">Article of the Day:</h3>
+          <a class="main-articles-link" href="https://www.nytimes.com/guides/well/how-to-meditate" target="_blank">
+            <div id="daily-article-image"></div>
+            <h3 id="daily-article-title">How to Meditate</h3>
+            <p id="daily-article-info">New York Times</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-xs-4 col-sm-4 offset-0">
+        <div id="main-challenges" class="main-bottom-container main-containers">
+          <h3 class="main-titles">Today's Possible Challenges:</h3>
+          <ol>
+            <a href="./social"><li class="challenges">Social media imposter syndrome
+            </li></a>
+            <a href="./interview"><li class="challenges">Job interview nerves
+            </li></a>
+            <a href=""><li class="challenges">Personal Finances
+            </li></a>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img id="down-arrow" src="http://cdn.onlinewebfonts.com/svg/img_144754.png" />
+  <a href="./"><img id="home-btn" src="https://cdn-icons.flaticon.com/png/512/1665/premium/1665727.png?token=exp=1645343480~hmac=7ef89a95447714852249ca3257589d77" /></a>
+</body>
+</html>

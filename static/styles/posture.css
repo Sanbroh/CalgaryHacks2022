@@ -1,0 +1,49 @@
+.camera-containers {
+  display: grid;
+  grid-template-columns: 35vw 1px 35vw;
+  height: 60vh;
+}
+
+.page-camera img {
+  border-radius: 32px;
+  display: block;
+  border-style: solid;
+  border-width: 4px;
+  margin-left: 4vw;
+  margin-top: 5vh;
+}
+
+.page-divider {
+  background-color: black;
+}
+
+.page-hints {
+
+}
+
+.page-hints ul {
+  list-style: none;
+}
+
+.page-hints li {
+  cursor: default;
+  font-size: 28px;
+  line-height: 12vh;
+  font-weight: bold;
+}
+
+.page-hints ul li::before {
+  content: "\2022";
+  font-size: 38px;
+  color: #ccc;
+  margin-right: 3vw;
+}
+
+#emotion {
+  text-align: center;
+  margin-top: 4vh;
+  cursor: default;
+  font-size: 18px;
+  margin-left: 3.5vw;
+  width: 25vw;
+}

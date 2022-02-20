@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>ReLeaf</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{ turbo() }}
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/base.css') }}"">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/posture.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body style="background-color:#F2F2F2;">
+  <div class="return-previous">
+    <img src="https://cdn-icons-png.flaticon.com/512/271/271218.png" />
+    <a href="./interview">
+      <h2>Back to pre-interview activities</h2>
+    </a>
+  </div>
+  <h1 class="page-title">Camera</h1>
+  <div class="camera-containers">
+    <div class="page-camera">
+      <img src="{{ url_for('video_feed') }}" width="70%" />
+      <h4 id="emotion">Smile for the camera! Be sure to put on a good posture when meeting the interviewers!</h4>
+    </div>
+    <div class="page-divider"></div>
+    <div class="page-hints">
+      <ul>
+        <li>Chin Up</li>
+        <li>Smile</li>
+        <li>Stretch your legs</li>
+        <li>Roll your shoulders back</li>
+        <li>Sit up straight</li>
+      </ul>
+    </div>
+  </div>
+  <a href="./"><img id="home-btn" src="https://cdn-icons.flaticon.com/png/512/1665/premium/1665727.png?token=exp=1645343480~hmac=7ef89a95447714852249ca3257589d77" /></a>
+</body>
+</html>

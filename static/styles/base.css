@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+  padding: 8vh 14vw;
+  padding-top: 6vh;
+  font-family: "Manrope", sans-serif !important;
+  padding-bottom: 10vh;
+}
+
+.main-containers {
+  border-radius: 16px;
+}
+
+.return-previous {
+  text-decoration: none;
+  margin-left: -2vw;
+}
+
+.return-previous img, .return-previous h2 {
+  display: inline-block;
+}
+
+.return-previous img {
+  width: 14px;
+  margin-top: -2px;
+}
+
+.return-previous h2 {
+  margin-left: 1vw;
+  font-size: 16px;
+  font-weight: bolder;
+  color: black;
+  transition: 0.5s;
+}
+
+.return-previous h2:hover {
+  margin-left: 2vw;
+  transition: 0.5s;
+}
+
+.page-title {
+  margin-top: 2vh;
+  font-weight: bold;
+  font-size: 52px;
+  cursor: default;
+}
+
+.page-subtitle {
+  font-size: 24px;
+  margin-top: -4px;
+  cursor: default;
+  display: inline-block;
+}
+
+.quotes {
+  height: 14vh;
+  line-height: 14vh;
+  margin-top: 3vh;
+  border-radius: 18px;
+  border-style: solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.discordapp.com/attachments/942582597282840617/944713308672495686/unknown.png");
+}
+
+.quotes h1 {
+  margin-top: 2.5vh;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: 10vw;
+  margin-right: 10vw;
+}
+
+.main-content {
+  margin-top: 16px;
+}
+
+/* The container */
+.checkbox {
+  display: block;
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  background-color: #ccc;
+}
+
+/* On mouse-over, add a grey background color */
+.checkbox:hover input ~ .checkmark {
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox .checkmark:after {
+  left: 8px;
+  top: 3px;
+  width: 8px;
+  height: 14px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+#countdown {
+  font-size: 24px;
+  margin-top: -4px;
+  cursor: default;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+#down-arrow {
+  width: 2.5vw;
+  position: absolute;
+  bottom: 4vh;
+  left: 50vw;
+  transform: translateX(-50%);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#down-arrow:hover {
+  width: 2.75vw;
+  bottom: 3.75vh;
+  transition: 0.5s;
+}
+
+#home-btn {
+  width: 4vw;
+  padding: 0.5vw 0.5vw;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 4vh;
+  right: 2vw;
+  transition: 0.5s;
+  background-color: white;
+  cursor: pointer;
+}
+
+#home-btn:hover {
+  transition: 0.5s;
+  background-color: #eee;
+}
+
+@keyframes fly-in-top {
+ 0%   {
+ transform: translate(-50%, -70%);
+ }
+ 100% {
+ transform: translate(-50%, -50%);
+ }
+}
+
+@keyframes fade-in {
+ 0%   {
+ opacity: 0;
+ }
+ 100% {
+ opacity: 0.5;
+ }
+}
+
+@keyframes infoFadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}

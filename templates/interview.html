@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/base.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/interview.css') }}">
+
+    <script src="js/script.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>ReLeaf</title>
+</head>
+<body style="background-color:#F2F2F2;">
+  <div class="overlay" id="interview-overlay">
+    <div class="overlay-background"></div>
+    <div class="overlay-menu">
+      <h1>Interview Options</h1>
+      <p>Tell us about your interview</p>
+      <form class="interview-form-begin">
+        <input type="text" id="interview-time" name="interview-time" placeholder="Minutes until interview"><br><br>
+        <input type="text" id="interview-type" name="interview-type" placeholder="Type of interview"><br><br>
+        <label for="feeling">How do you feel?</label>
+        <br>
+        <select class="interview-select"  id="feeling" name="feeling" form="feeling-form">
+          <option value="confident">Confident</option>
+          <option value="assured">Assured</option>
+          <option value="neutral">Neutral</option>
+          <option value="overwhelmed">Overwhelmed</option>
+          <option value="crisis">Crisis</option>
+        </select>
+        <input onclick="return submitForm();" class="interview-submit" type="submit">
+      </form>
+      <i id="infoexit" class="material-icons lighter" onclick="closeForm()">close</i>
+    </div>
+  </div>
+  <div class="return-previous">
+    <img src="https://cdn-icons-png.flaticon.com/512/271/271218.png" />
+    <a href="./exercises">
+      <h2>Back to exercises</h2>
+    </a>
+  </div>
+  <h1 class="page-title">Pre-Interview Activities</h1>
+  <a onclick="openForm()" class="interview-countdown"><h2 id="countdown">SET</h2></a><h2 id="countdown-comment" class="page-subtitle">seconds before your interview</h2>
+  <div class="row main-bottom">
+    <div class="col-xs-4 col-sm-4 offset-0">
+      <div id="main-relax" class="main-bottom-container main-containers">
+        <h3 class="main-titles">15 minutes: Relaxation</h3>
+        <div class="main-content">
+          <label class="checkbox">Listen to my favourite song
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox">Deep breathing exercises
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 col-sm-4 offset-0">
+      <div id="main-cramming" class="main-bottom-container main-containers">
+        <h3 class="main-titles">10 minutes: Exam-anxiety</h3>
+        <div class="main-content">
+          <label class="checkbox">Practice my weak interview questions
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox">Review interview resources
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-4 col-sm-4 offset-0">
+      <div id="main-encourage" class="main-bottom-container main-containers">
+        <h3 class="main-titles">5 minutes: Encouragement</h3>
+        <div class="main-content">
+          <label class="checkbox">Call my best friend
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="checkbox">Read motivational quotes
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="main-posture" class="col-xs-12 col-sm-12 col-md-12 main-containers posture-button">
+      <a href="./posture">
+        <span class="hyperspan main-containers"></span>
+      </a>
+      <h1>Posture tips to excel during your interview</h1>
+    </div>
+    <div id="quotes" class="col-xs-12 col-sm-12 col-md-12 main-containers quotes">
+      <a href="./quotes">
+        <span class="hyperspan main-containers"></span>
+      </a>
+      <h1>“Because a thing seems difficult for you, do not think it impossible for anyone to accomplish.” - Marcus Aurelius</h1>
+    </div>
+
+  </div>
+  <a href="./"><img id="home-btn" src="https://cdn-icons.flaticon.com/png/512/1665/premium/1665727.png?token=exp=1645343480~hmac=7ef89a95447714852249ca3257589d77" /></a>
+</body>
+</html>

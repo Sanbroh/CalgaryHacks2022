@@ -1,0 +1,189 @@
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.overlay-background {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.5;
+  animation: fade-in 1s ease-out;
+}
+
+.overlay-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: white;
+  border-radius: 32px;
+  text-align: center;
+  padding: 50px 20px;
+  cursor: default;
+
+  animation: fly-in-top 1s ease-out;
+}
+
+.overlay-menu h1 {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.overlay-menu p {
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.overlay-menu form input {
+  border-style: none;
+  border-bottom: solid;
+  border-bottom-width: 2px;
+  padding: 4px 2px;
+}
+
+.interview-form-begin {
+  margin-top: 32px;
+}
+
+.overlay-menu select {
+  border-width: 2px;
+  border-style: solid;
+  padding: 4px 4px;
+  border-radius: 8px;
+}
+
+.interview-submit {
+  border-radius: 8px;
+  border-style: solid !important;
+  border-width: 2px !important;
+  border-color: black !important;
+  padding: 6px 16px !important;
+  color: black;
+  font-weight: bolder;
+  background-color: white;
+  cursor: pointer;
+  display: block;
+  margin-top: 42px;
+  margin-left: auto;
+  margin-right: auto;
+
+  transition: 0.5s;
+}
+
+.interview-submit:hover {
+  background-color: black;
+  color: white;
+  border-color: black !important;
+
+  transition: 0.5s;
+}
+
+.main-bottom {
+  margin-top: 4vh;
+  height: 25vh !important;
+}
+
+.main-bottom-container {
+  height: 25vh;
+  padding-top: 2vh;
+  padding-left: 1.5vw;
+}
+
+.main-titles {
+  font-size: 18px;
+  font-weight: bolder;
+  margin: auto;
+  cursor: default;
+}
+
+.main-articles-link {
+  width: 16vw;
+  display: block;
+}
+
+.posture-button {
+  height: 14vh;
+  line-height: 14vh;
+  margin-top: 3vh;
+  border-radius: 18px;
+  border-color: gray;
+  border-style: solid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.discordapp.com/attachments/942582597282840617/944718472582160444/unknown.png");
+}
+
+.posture-button h1 {
+  font-size: 24px;
+  font-weight: bolder;
+  margin-left: 2vw;
+  display: inline-block;
+}
+
+.hyperspan {
+  position:absolute;
+  width:100%;
+  height:100%;
+  left:0;
+  top:0;
+  transition: 1s;
+  border-radius: 18px;
+}
+
+.hyperspan:hover {
+  background-color: white;
+  opacity: 0.1;
+
+  transition: 1s;
+}
+
+#main-relax {
+  background-color: #D7E2E8;
+}
+
+#main-cramming {
+  background-color: #FEDDD8;
+}
+
+#main-encourage {
+  background-color: #D7E8E5;
+}
+
+#interview-overlay {
+  display: none;
+}
+
+#countdown {
+  cursor: pointer;
+}
+
+#countdown:hover {
+  text-decoration: underline;
+}
+
+#infoexit {
+  cursor: pointer;
+  position: absolute;
+  top: 3vh;
+  right: 1.5vw;
+  width: 24px;
+}
+
+@keyframes example2 {
+ 0%   {
+ transform: translateX(200%);
+ }
+ 100% {
+ transform: translateX(0%);
+ }
+}
